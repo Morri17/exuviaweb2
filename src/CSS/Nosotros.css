@@ -1,11 +1,21 @@
 /* Estilos para la sección Nosotros */
 .nosotros-container {
-    margin: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 150px;
+}
 
+/* Estilos para el mapa de Google */
+.react-iframe {
+  border: 0;
+}
 
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .col-md-8 {
+    flex: 0 0 100%; /* Ocupar todo el ancho en pantallas pequeñas */
+    max-width: 100%;
+    margin-bottom: 20px;
   }
-  
-  .react-iframe {
-    border: 15px;
-  }
-  
+}

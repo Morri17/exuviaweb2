@@ -4,9 +4,10 @@ import Iframe from "react-iframe";
 
 const Nosotros = () => {
   return (
-    <div className="container nosotros-container">
+    <section id="Nosotros" className="section">
+    <div  className="container nosotros-container">
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-md-8">
           <h2>Nosotros</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id
@@ -14,7 +15,7 @@ const Nosotros = () => {
             ultrices. Vivamus laoreet euismod orci, nec laoreet eros congue id.
           </p>
         </div>
-        <div className="col-md-2">
+        <div className="col-md-4">
           <Iframe
             url="https://maps.google.com/maps?width=675&amp;height=496&amp;hl=en&amp;q=Exuvia agro SRL, Argentina&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
             width="500px"
@@ -28,6 +29,7 @@ const Nosotros = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

@@ -8,11 +8,12 @@ const Inicio = () => {
        <div className="home-container">
       <div className="background">
         <img className="background" src={imagenfondo} alt="" />
-      </div>
-      <div className="logo-container">
-        <img className="logovideo" src={logoexuvia} alt="Logo de la marca" />
+        <div className="logo-container">
+        <img className="logoimagen" src={logoexuvia} alt="Logo de la marca" />
       </div>
     </div>
+      </div>
+     
     </section>
   );
 };
