@@ -42,6 +42,19 @@ const Contacto = () => {
   return (
     <section id="contacto" className="section">
       <div className="divmadre">
+      <div className="texto">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sunt
+          veritatis hic quibusdam dolore earum ipsa debitis sequi ullam adipisci
+          dignissimos, architecto harum tempore maxime incidunt voluptatum. Aut,
+          earum neque. Ipsa nesciunt necessitatibus enim recusandae, quasi et
+          quas commodi officia dolore mollitia quae labore hic nostrum similique
+          laudantium nihil beatae voluptatibus? Illo odio cupiditate sint iusto
+          porro dolore minus temporibus. Ut fuga recusaconseesse sint expedita,
+          corrupti doloribus suscipit dolores eum architecto iusto corporis
+          excepturi alias minima libero hic sit eos commodi distinctio dolorem
+          harum culpa? Atque. Quos, maiores voluptatem! Cumque delectus
+          exercitationem incidunt aa?
+        </div>
         <div className="formulario">
           <div className="titulo"> PONETE EN COTACTO CON NOSOTROS</div>
           <form ref={form} onSubmit={handleSubmit(sendEmail)}>
@@ -98,19 +111,7 @@ const Contacto = () => {
             )}
           </form>
         </div>
-        <div className="texto">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sunt
-          veritatis hic quibusdam dolore earum ipsa debitis sequi ullam adipisci
-          dignissimos, architecto harum tempore maxime incidunt voluptatum. Aut,
-          earum neque. Ipsa nesciunt necessitatibus enim recusandae, quasi et
-          quas commodi officia dolore mollitia quae labore hic nostrum similique
-          laudantium nihil beatae voluptatibus? Illo odio cupiditate sint iusto
-          porro dolore minus temporibus. Ut fuga recusaconseesse sint expedita,
-          corrupti doloribus suscipit dolores eum architecto iusto corporis
-          excepturi alias minima libero hic sit eos commodi distinctio dolorem
-          harum culpa? Atque. Quos, maiores voluptatem! Cumque delectus
-          exercitationem incidunt aa?
-        </div>
+       
       </div>
     </section>
   );
