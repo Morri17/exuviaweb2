@@ -2,7 +2,9 @@
   position: relative;
 }
 
-.fondoProductos {
+.background-productos {
+  background-image: url("../assets/Imagenes/Imagen1.jpeg");
+  background-position: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -18,6 +20,7 @@
   justify-content: center;
   align-items: center;
   font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .row {

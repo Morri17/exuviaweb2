@@ -2,7 +2,6 @@ import React from "react";
 import "../CSS/Productos.css";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import fondoProductos from "../assets/Imagenes/Imagen1.jpeg"
 
 const productosData = [
   {
@@ -53,7 +52,7 @@ const Productos = () => {
 
   return (
     <div className="container-productos">
-      <img  className="fondoProductos" src={fondoProductos} alt="" />
+      <div className="background-productos"></div>
       <h2 className="titulo-productos">Nuestros Productos</h2>
       {gruposDeProductos.map((grupo, index) => (
         <div key={index} className="row">
