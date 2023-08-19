@@ -7,7 +7,7 @@ const Nosotros = () => {
     <section id="Nosotros" className="section">
     <div  className="container nosotros-container">
       <div className="row">
-        <div className="col-md-8">
+        <div className="col-md-4">
           <h2>Nosotros</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id

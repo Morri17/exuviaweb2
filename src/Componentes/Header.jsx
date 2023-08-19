@@ -1,8 +1,8 @@
 import React from "react";
 import "../CSS/Header.css";
 import logoexuvia from "../assets/Imagenes/ExuviaAgro - Isotipo.png";
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
 
 const Header = ({ sections }) => {
   const handleSectionChange = (sectionId) => {
@@ -10,6 +10,16 @@ const Header = ({ sections }) => {
     if (section) {
       section.ref.current.scrollIntoView({ behavior: "smooth" });
     }
+  };
+
+  const renderNavLinks = () => {
+    return sections.map((section) => (
+      <Nav.Item key={section.id}>
+        <Nav.Link href="#" onClick={() => handleSectionChange(section.id)}>
+          {section.label}
+        </Nav.Link>
+      </Nav.Item>
+    ));
   };
 
   return (
@@ -23,7 +33,10 @@ const Header = ({ sections }) => {
           <Nav className="ml-auto">
             {sections.map((section) => (
               <Nav.Item key={section.id}>
-                <Nav.Link href="#" onClick={() => handleSectionChange(section.id)}>
+                <Nav.Link
+                  href="#"
+                  onClick={() => handleSectionChange(section.id)}
+                >
                   {section.label}
                 </Nav.Link>
               </Nav.Item>
@@ -36,4 +49,3 @@ const Header = ({ sections }) => {
 };
 
 export default Header;
-
