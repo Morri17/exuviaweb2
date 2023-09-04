@@ -1,5 +1,5 @@
-import React, { useRef, useState, useEffect } from "react";
-import {useForm} from "react-hook-form";
+import { useRef, useState, useEffect } from "react";
+import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../CSS/Contacto.css";
@@ -34,7 +34,7 @@ const Contacto = () => {
     if (isSuccess) {
       const redirectTimeout = setTimeout(() => {
         window.location.href = "http://localhost:5173/inicio";
-      }, 5000);
+      }, 4000);
       return () => clearTimeout(redirectTimeout);
     }
   }, [isSuccess]);
@@ -42,7 +42,7 @@ const Contacto = () => {
   return (
     <section id="contacto" className="section">
       <div className="divmadre">
-      <div className="texto">
+        <div className="texto">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sunt
           veritatis hic quibusdam dolore earum ipsa debitis sequi ullam adipisci
           dignissimos, architecto harum tempore maxime incidunt voluptatum. Aut,
@@ -111,7 +111,6 @@ const Contacto = () => {
             )}
           </form>
         </div>
-       
       </div>
     </section>
   );
