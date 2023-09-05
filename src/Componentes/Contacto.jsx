@@ -40,79 +40,89 @@ const Contacto = () => {
   }, [isSuccess]);
 
   return (
-    <section id="contacto" className="section">
-      <div className="divmadre">
-        <div className="texto">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam sunt
-          veritatis hic quibusdam dolore earum ipsa debitis sequi ullam adipisci
-          dignissimos, architecto harum tempore maxime incidunt voluptatum. Aut,
-          earum neque. Ipsa nesciunt necessitatibus enim recusandae, quasi et
-          quas commodi officia dolore mollitia quae labore hic nostrum similique
-          laudantium nihil beatae voluptatibus? Illo odio cupiditate sint iusto
-          porro dolore minus temporibus. Ut fuga recusaconseesse sint expedita,
-          corrupti doloribus suscipit dolores eum architecto iusto corporis
-          excepturi alias minima libero hic sit eos commodi distinctio dolorem
-          harum culpa? Atque. Quos, maiores voluptatem! Cumque delectus
-          exercitationem incidunt aa?
+    <div className="background-contacto">
+    <div className="container g-5">
+      <form className="row g-4" ref={form} onSubmit={handleSubmit(sendEmail)}>
+        <div className="col-6">
+          <label name="use_name" className="form-label">
+            Nombre:
+          </label>
+          <input
+            type="text"
+            className="form-control"
+            name="user_name"
+            placeholder="Complete su nombre"
+          />
+          {errors.user_name && (
+            <div className="text-danger">Debe completar su nombre</div>
+          )}
         </div>
-        <div className="formulario">
-          <div className="titulo"> PONETE EN COTACTO CON NOSOTROS</div>
-          <form ref={form} onSubmit={handleSubmit(sendEmail)}>
-            <label>Nombre:</label>
-            <input
-              type="text"
-              name="user_name"
-              {...register("user_name", { required: true })}
-            />
-            {errors.user_name && (
-              <div className="text-danger">Debe completar su nombre</div>
-            )}
-            <label>Email:</label>
-            <input
-              type="email"
-              name="user_email"
-              {...register("user_email", { required: true })}
-            />
-            {errors.user_email && (
-              <div className="text-danger">Debe completar su correo</div>
-            )}
-            <label>Telefono de contacto:</label>
-            <input
-              type="telefono"
-              name="user_telefono"
-              {...register("user_telefono", { required: true })}
-            />
-            {errors.user_telefono && (
-              <div className="text-danger">
-                Debe colocar un numero de contacto
-              </div>
-            )}
-
-            <label>Dejanos tu consulta:</label>
-            <textarea
-              name="message"
-              {...register("message", { required: true })}
-            />
-            {errors.message && (
-              <div className="text-danger">
-                Es necesario que escriba un mensaje
-              </div>
-            )}
-
-            <input type="submit" value="ENVIAR" className="btn btn-primary" />
-
-            {isSuccess && (
-              <div>
-                <div className="alert alert-success mt-3">
-                  Consulta enviada correctamente. A la brevedad lo contactaremos
-                </div>
-                Sera redirigido a la pagina principal
-              </div>
-            )}
-          </form>
+        <div className="col-6">
+          <label name="use_email" className="form-label">
+            Email:
+          </label>
+          <input
+            type="email"
+            className="form-control"
+            name="user_name"
+            placeholder="Complete su email"
+          />
+          {errors.user_email && (
+            <div className="text-danger">Debe completar su correo</div>
+          )}
         </div>
-      </div>
-    </section>
+        <div className="col-6">
+          <label name="use_ciudad" className="form-label">
+            Telefono:
+          </label>
+          <input
+            type="number"
+            className="form-control"
+            name="user_ciudad"
+            placeholder="Número de contacto"
+            {...register("user_telefono", { required: true })}
+          />
+        </div>
+        <div className="col-6">
+          <label name="use_email" className="form-label">
+            Ciudad:
+          </label>
+          <input
+            type="number"
+            className="form-control"
+            name="user_telefono"
+            placeholder="Complete su ciudad"
+            {...register("user_ciudad", { required: true })}
+          />
+        </div>
+        <div className="col-12">
+          <label name="use_mensaje" className="form-label">
+            Dejenos su comentario:
+          </label>
+          <textarea
+            className="form-control"
+            type="text"
+            name="mensaje"
+            id="mensjae"
+            placeholder="Escriba su mensaje aqui"
+          ></textarea>
+          {errors.mensaje && (
+            <div className="text-danger">
+              Es necesario que escriba un mensaje
+            </div>
+          )}
+        </div>
+        <div className="col mt-5 mb-5">
+          <input type="submit" value="ENVIAR" className="btn btn-light btn-lg" />
+          {isSuccess && (
+            <div className="alert alert-success mt-3" role="alert">
+              Consulta enviada correctamente. A la brevedad lo contactaremos.
+            </div>
+          )}
+        </div>
+      </form>
+    </div>
+    </div>
   );
 };
 

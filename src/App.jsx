@@ -6,7 +6,6 @@ import Inicio from "./Componentes/Inicio";
 import Nosotros from "./Componentes/Nosotros";
 import Productos from "./Componentes/Productos";
 import BotonWhatsApp from "./WhatsapBoton/WhatsappBoton";
-import Contacto2 from "./Componentes/Contacto2";
 
 function App() {
   const sectionRefs = [
@@ -29,7 +28,7 @@ function App() {
           <Nosotros />
         </div>
         <div ref={sectionRefs[3].ref}>
-          <Contacto2 />
+          <Contacto />
         </div>
       </div>
         <BotonWhatsApp />
