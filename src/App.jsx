@@ -6,6 +6,7 @@ import Inicio from "./Componentes/Inicio";
 import Nosotros from "./Componentes/Nosotros";
 import Productos from "./Componentes/Productos";
 import BotonWhatsApp from "./WhatsapBoton/WhatsappBoton";
+import Footer from "./Componentes/Footer";
 
 function App() {
   const sectionRefs = [
@@ -32,6 +33,7 @@ function App() {
         </div>
       </div>
         <BotonWhatsApp />
+        <Footer/>
     </>
   );
 }
