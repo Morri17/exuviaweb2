@@ -53,9 +53,8 @@ const Contacto = () => {
   }, [isSuccess]);
 
   return (
-    <div className="container">
-      <div className="row">
-    <div className="col">
+    
+    <div className="container col-8">
       <div className="background-contacto">
         <div className="col p-3 mr-3">
           <form
@@ -160,11 +159,7 @@ const Contacto = () => {
         </div>
       </div>
     </div>
-    <div className="col-6">
-     asdas  
-    </div>
-    </div>
-    </div>  
+ 
   );
 };
 
