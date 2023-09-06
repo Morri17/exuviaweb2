@@ -5,6 +5,23 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../CSS/Contacto.css";
 
 const Contacto = () => {
+  const forms = document.querySelectorAll(".needs-validation");
+
+  Array.from(forms).forEach((form) => {
+    form.addEventListener(
+      "submit",
+      (event) => {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+
+        form.classList.add("was-validated");
+      },
+      false
+    );
+  });
+
   const {
     register,
     handleSubmit,
@@ -35,20 +52,23 @@ const Contacto = () => {
       const redirectTimeout = setTimeout(() => {
         window.location.href = "http://localhost:5173/inicio";
       }, 4000);
-      return () =>  clearTimeout(redirectTimeout);
+      return () => clearTimeout(redirectTimeout);
     }
   }, [isSuccess]);
 
   return (
+    <div className="col-6">
     <div className="background-contacto">
+      
       <div className="col-6 p-3 mr-3">
         <form
-          className="row align-items-center g-2 mt-4"
+          className="row align-items-center g-2 mt-4 needs-validation"
+          noValidate
           ref={form}
           onSubmit={handleSubmit(sendEmail)}
         >
-          <div className="col-6">
-            <label name="use_name" className="form-label">
+          <div className="col-6 position-relative">
+            <label name="user_name" className="form-label">
               Nombre:
             </label>
             <input
@@ -56,26 +76,28 @@ const Contacto = () => {
               className="form-control"
               name="user_name"
               placeholder="Complete su nombre"
+              required
             />
-            {errors.user_name && (
-              <div className="text-danger">Debe completar su nombre</div>
-            )}
+            <div className="invalid-tooltip">
+              Es necesario que complete su nombre
+            </div>
           </div>
-          <div className="col-6">
+          <div className="col-6 position-relative">
             <label name="use_email" className="form-label">
               Email:
             </label>
             <input
               type="email"
               className="form-control"
-              name="user_name"
+              name="user_email"
               placeholder="Complete su email"
+              required
             />
-            {errors.user_email && (
-              <div className="text-danger">Debe completar su correo</div>
-            )}
+             <div className="invalid-tooltip">
+              Es necesario que coloque un email
+            </div>
           </div>
-          <div className="col-6">
+          <div className="col-6 position-relative">
             <label name="user_number" className="form-label">
               Telefono:
             </label>
@@ -84,43 +106,50 @@ const Contacto = () => {
               className="form-control"
               name="user_number"
               placeholder="Número de contacto"
-              {...register("user_telefono", { required: true })}
+              required
             />
+            <div className="invalid-tooltip">
+              Debe colocar un numero de contacto, el mismo debe ser sin guiones.
+            </div>
           </div>
-          <div className="col-6">
+          <div className="col-6 position-relative">
             <label name="user_ciudad" className="form-label">
               Ciudad:
             </label>
             <input
               type="text"
               className="form-control"
-              name="user_telefono"
+              name="user_ciudad"
               placeholder="Complete su ciudad"
+              required
               {...register("user_ciudad", { required: true })}
             />
+            <div className="invalid-tooltip">
+              Coloque su ciudad
+            </div>
           </div>
-          <div className="col-12">
-            <label name="use_mensaje" className="form-label">
+          <div className="col-12 position-relative">
+            <label name="user_mensaje" className="form-label">
               Dejenos su comentario:
             </label>
             <textarea
               className="form-control"
               type="text"
-              name="mensaje"
+              name="user_mensaje"
               id="mensjae"
-              placeholder="Escriba su mensaje aqui"
+              placeholder="Escriba su duda aquí, nos comuncaremos a la brevedad"
+              required
             ></textarea>
-            {errors.mensaje && (
-              <div className="text-danger">
-                Es necesario que escriba un mensaje
-              </div>
-            )}
+            <div className="invalid-tooltip">
+              Debe dejar su comentario
+            </div>
           </div>
           <div className="col mt-4">
             <input
               type="submit"
               value="Enviar mensaje"
-              className="btn btn-primary btn-lg mb-4"
+              className="btn btn-primary  mt-3 mb-2"
+              required
             />
             {isSuccess && (
               <div
@@ -135,6 +164,8 @@ const Contacto = () => {
         </form>
       </div>
     </div>
+    </div>
+   
   );
 };
 

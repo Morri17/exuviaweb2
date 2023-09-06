@@ -29,7 +29,7 @@ function App() {
           <Nosotros />
         </div>
         <div ref={sectionRefs[3].ref}>
-          <Contacto />
+          <Contacto/>
         </div>
       </div>
         <BotonWhatsApp />

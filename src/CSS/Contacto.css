@@ -1,9 +1,10 @@
 .background-contacto{
-  background-color: rgba(20, 95, 8, 0.667);
+  background-color: rgba(104, 117, 104, 0.253);
+
 }
 .form-label{
-  color: white;
-  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
 }
 .form-control{
   color: wheat;
