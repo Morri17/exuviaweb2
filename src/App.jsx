@@ -1,13 +1,13 @@
 import "./App.css";
 import { useRef } from "react";
 import Header from "./Componentes/Header";
-import Contacto from "./Componentes/Contacto";
+import Contact from "./Componentes/Contact";
 import Inicio from "./Componentes/Inicio";
 import Nosotros from "./Componentes/Nosotros";
 import Productos from "./Componentes/Productos";
 import BotonWhatsApp from "./WhatsapBoton/WhatsappBoton";
 import Footer from "./Componentes/Footer";
-import Contacto0 from "./Componentes/Contacto0";
+
 
 function App() {
   const sectionRefs = [
@@ -28,7 +28,7 @@ function App() {
         </div>
         
         <div ref={sectionRefs[3].ref}>
-          <Contacto0/>
+          <Contact/>
         </div>
       </div>
         <BotonWhatsApp />
