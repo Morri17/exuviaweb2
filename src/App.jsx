@@ -7,6 +7,7 @@ import Nosotros from "./Componentes/Nosotros";
 import Productos from "./Componentes/Productos";
 import BotonWhatsApp from "./WhatsapBoton/WhatsappBoton";
 import Footer from "./Componentes/Footer";
+import Contacto0 from "./Componentes/Contacto0";
 
 function App() {
   const sectionRefs = [
@@ -25,11 +26,9 @@ function App() {
         <div ref={sectionRefs[1].ref}>
           <Productos />
         </div>
-        <div ref={sectionRefs[2].ref}>
-          <Nosotros />
-        </div>
+        
         <div ref={sectionRefs[3].ref}>
-          <Contacto/>
+          <Contacto0/>
         </div>
       </div>
         <BotonWhatsApp />
@@ -39,3 +38,7 @@ function App() {
 }
 
 export default App;
+
+/* <div ref={sectionRefs[2].ref}>
+<Nosotros />
+</div> */
