@@ -6,7 +6,7 @@ import "../CSS/Contacto.css";
 
 const Contacto = () => {
   const {
-    register,
+  
     handleSubmit,
     formState: { errors },
   } = useForm();
@@ -84,7 +84,7 @@ const Contacto = () => {
               className="form-control"
               name="user_number"
               placeholder="Número de contacto"
-              {...register("user_telefono", { required: true })}
+              
             />
           </div>
           <div className="col-6">
@@ -96,7 +96,7 @@ const Contacto = () => {
               className="form-control"
               name="user_telefono"
               placeholder="Complete su ciudad"
-              {...register("user_ciudad", { required: true })}
+            
             />
           </div>
           <div className="col-12">
