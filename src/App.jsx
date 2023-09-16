@@ -24,7 +24,7 @@ function App() {
           <Inicio />
         </div>
         <div ref={sectionRefs[1].ref}>
-          <Productos />
+          
         </div>
         
         <div ref={sectionRefs[3].ref}>

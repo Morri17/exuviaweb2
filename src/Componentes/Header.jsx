@@ -1,4 +1,3 @@
-import React from "react";
 import "../CSS/Header.css";
 import logoexuvia from "../assets/Imagenes/ExuviaAgro - Isotipo.png";
 import Navbar from "react-bootstrap/Navbar";

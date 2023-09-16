@@ -6,7 +6,7 @@ import "../CSS/Contacto.css";
 
 const Contacto = () => {
   const { register, handleSubmit, formState: { errors }, reset } = useForm();
-  const [isSuccess, setIsSuccess] = useState(false);
+
 
   const sendEmail = (data) => {
     if (Object.keys(errors).length === 0) {
@@ -17,7 +17,7 @@ const Contacto = () => {
       emailjs.send(serviceID, templateID, data, PUBLICKEY)
         .then((result) => {
           console.log(result.text);
-          setIsSuccess(true);
+          
           reset();
         })
         .catch((error) => {
