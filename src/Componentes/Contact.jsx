@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import { useState } from "react";
 
+// tengo que ver el tema del redirect al home y verificar el mail.
 const Contact = () => {
   const [mostrarAlerta, setMostrarAlerta] = useState(false);
   const {
@@ -21,7 +22,7 @@ const Contact = () => {
 
       emailjs
         .send(serviceID, templateID, data, PUBLICKEY)
-        .then((result) => { 
+        .then((result) => {
           console.log(result.text);
           setTimeout(() => {
             setMostrarAlerta(true);
@@ -35,9 +36,9 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <div id="Contact">
       <form onSubmit={handleSubmit(sendEmail)}>
-        <div className="form-area">
+        <div className="form-area bg-secondary bg-gradient">
           <div className="container">
             <div className="row single-form g-0">
               <div className="col-sm-12 col-lg-6">
@@ -83,7 +84,7 @@ const Contact = () => {
                     </div>
                     <div className="input-field">
                       <input
-                        type="number"
+                        type="tel"
                         className="input"
                         id="user_number"
                         required
@@ -92,7 +93,7 @@ const Contact = () => {
                           required: "Este campo es requerido",
                         })}
                       />
-                      <label htmlFor="email">Telefono</label>
+                      <label htmlFor="tel">Telefono</label>
                     </div>
 
                     <div className="input-field">

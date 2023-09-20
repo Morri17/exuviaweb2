@@ -5,7 +5,7 @@ import Iframe from "react-iframe";
 const Nosotros = () => {
   return (
     <section id="Nosotros" className="section">
-    <div  className="container-lg ">
+    <div  className="container-col-6-lg ">
       <div className="row mt-5 p-5">
         <div className="col-6">
           <h2 className="titulo-nosotros">Nosotros</h2>
