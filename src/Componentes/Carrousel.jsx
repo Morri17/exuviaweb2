@@ -1,78 +1,61 @@
-  import imagen1 from "../assets/Imagenes/trigo.jpg";
-  import imagen2 from "../assets/Imagenes/Imagen3.jpeg";
-  import imagen3 from "../assets/Imagenes/Imagen1.jpeg";
+import imagen1 from "../assets/Imagenes/Imagen6.jpg";
 
-
-
-  const Carrousel = () => {
-
-    return (
-      <div id="Carousel" className="carousel slide">
-        <div className="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#Carousel"
-            data-bs-slide-to="0"
-            className="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#Carousel"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#Carousel"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
+const Carrousel = () => {
+  return (
+    <div className="container aling-items-center justify-content-center text-center">
+      <div className="row p-4">
+        <div className="col-12">
+          <h1>Nuestros prodcutos</h1>
         </div>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img src={imagen1} className="d-block w-100" alt="..." />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <img src={imagen2} className="d-block w-100" alt="..." />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <img src={imagen3} className="d-block w-100" alt="..." />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#Carousel"
-          data-bs-slide="prev"
-        >
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#Carousel"
-          data-bs-slide="next"
-        >
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
       </div>
-    );
-  };
+      <div className="row">
+        <div className="col-6">
+          <div className="card mb-4">
+            <img src={imagen1} className="card-img-top" alt="Prducto..." />
+            <div className="card-body">
+              <p className="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the cards content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-6">
+        <div className="card mb-4">
+            <img src={imagen1} className="card-img-top" alt="Prducto..." />
+            <div className="card-body">
+              <p className="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the cards content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-6">
+        <div className="card mb-4">
+            <img src={imagen1} className="card-img-top" alt="Prducto..." />
+            <div className="card-body">
+              <p className="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the cards content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-6">
+        <div className="card mb-4">
+            <img src={imagen1} className="card-img-top" alt="Prducto..." />
+            <div className="card-body">
+              <p className="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the cards content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-  export default Carrousel;
+export default Carrousel;

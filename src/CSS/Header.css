@@ -1,9 +1,7 @@
 .navbar {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.315) !important; 
   z-index: 1;
-  position: fixed !important; /* Establece la posición fija */
-  top: 0 !important;  /* Ancla la barra de navegación en la parte superior */
-  width: 100% !important; /* Ancho completo */
+  width: 100% !important;
 }
 
 .navbar-nav .nav-link:hover {

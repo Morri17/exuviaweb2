@@ -5,6 +5,7 @@ import emailjs from "@emailjs/browser";
 import { useState } from "react";
 
 // tengo que ver el tema del redirect al home y verificar el mail.
+
 const Contact = () => {
   const [mostrarAlerta, setMostrarAlerta] = useState(false);
   const {

@@ -23,10 +23,10 @@ function App() {
           <Inicio />
         </div>
         <div ref={sectionRefs[1].ref}>
-          <Carrousel />
+         <Carrousel/>
         </div>
         <div ref={sectionRefs[2].ref}>
-          <Nosotros />
+          <Nosotros/>
         </div>
         <div ref={sectionRefs[3].ref}>
           <Contact />
