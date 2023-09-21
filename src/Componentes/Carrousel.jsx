@@ -19,7 +19,7 @@ const Carrousel = () => {
                 the bulk of the cards content.
               </p>
               <a href="#" className="btn btn-primary">
-                Go somewhere
+                Más detalles
               </a>
             </div>
           </div>
@@ -36,7 +36,7 @@ const Carrousel = () => {
                 rentables.
               </p>
               <a href="#" className="btn btn-primary">
-                Go somewhere
+                Más detalles
               </a>
             </div>
           </div>
@@ -53,7 +53,7 @@ const Carrousel = () => {
                 rentables.
               </p>
               <a href="#" className="btn btn-primary">
-                Go somewhere
+                Más detalles
               </a>
             </div>
           </div>
@@ -70,7 +70,7 @@ const Carrousel = () => {
                 rentables.
               </p>
               <a href="#" className="btn btn-primary">
-                Go somewhere
+                Más detalles
               </a>
             </div>
           </div>
@@ -85,7 +85,7 @@ const Carrousel = () => {
                 the bulk of the cards content.
               </p>
               <a href="#" className="btn btn-primary">
-                Go somewhere
+                Más detalles
               </a>
             </div>
           </div>
@@ -101,7 +101,7 @@ const Carrousel = () => {
                 the bulk of the cards content.
               </p>
               <a href="#" className="btn btn-primary">
-                Go somewhere
+                Más detalles
               </a>
             </div>
           </div>
