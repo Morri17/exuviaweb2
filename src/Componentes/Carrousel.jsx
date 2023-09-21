@@ -47,8 +47,10 @@ const Carrousel = () => {
             <div className="card-body">
               <h5 className="card-title">Fungicidas</h5>
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the cards content.
+                Le acercamos un mix de fungicidas de máxima eficacia y excelente
+                relación costo/beneficio. Para proteger sus cultivos y su
+                inversión haciendo que sus decisiones se vuelvan todavía más
+                rentables.
               </p>
               <a href="#" className="btn btn-primary">
                 Go somewhere
@@ -62,8 +64,10 @@ const Carrousel = () => {
             <div className="card-body">
               <h5 className="card-title">Insecticidas</h5>
               <p className="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the cards content.
+                Le acercamos un mix de insecticidas de máxima eficacia y
+                excelente relación costo/beneficio. Para proteger sus cultivos y
+                su inversión haciendo que sus decisiones se vuelvan todavía más
+                rentables.
               </p>
               <a href="#" className="btn btn-primary">
                 Go somewhere
