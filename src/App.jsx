@@ -3,7 +3,7 @@ import { useRef } from "react";
 import Header from "./Componentes/Header";
 import Contact from "./Componentes/Contact";
 import Inicio from "./Componentes/Inicio";
-import Nosotros from "./Componentes/Nosotros";
+
 import BotonWhatsApp from "./WhatsapBoton/WhatsappBoton";
 import Footer from "./Componentes/Footer";
 import Carrousel from "./Componentes/Carrousel";
@@ -26,7 +26,7 @@ function App() {
          <Carrousel/>
         </div>
         <div ref={sectionRefs[2].ref}>
-          <Nosotros/>
+       
         </div>
         <div ref={sectionRefs[3].ref}>
           <Contact />

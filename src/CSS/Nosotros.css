@@ -1,34 +1,15 @@
-.section {
+/* En el archivo Nosotros.css */
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 50.25%; /* Esta proporción mantiene una relación de aspecto 16:9 */
   position: relative;
+  height: 0;
 }
 
-.nosotros-container {
-  max-width: 1200px; /* Ajusta el ancho máximo según tus necesidades */
-  margin: 0 auto;
-  padding: 60px 20px;
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.col-md-8 {
-  flex: 0 0 calc(66.6667% - 20px);
-  margin-bottom: 20px;
-}
-
-.col-md-4 {
-  flex: 0 0 calc(33.3333% - 20px); 
-  margin-bottom: 20px;
-}
-
-@media (max-width: 768px) {
-  .col-md-8,
-  .col-md-4 {
-    flex: 0 0 100%;
-  }
-}
-
-/* Agrega más estilos según tus necesidades */
