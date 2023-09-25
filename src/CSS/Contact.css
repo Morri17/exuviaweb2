@@ -4,7 +4,6 @@
 .form-area {
   padding-top: 5%;
   padding-bottom: 5%;
-  
 }
 .row.single-form {
   border-radius: 10px 10px 10px 10px;
@@ -145,13 +144,15 @@ span a:hover {
   color: #000;
 }
 
-@media (min-width: 500px) and (max-width: 997px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .right i {
     top: -52px;
     transform: rotate(90deg);
     left: 50%;
+    text-align: center;
+    align-items: center;
   }
- 
+
   .input-box {
     padding: 20px;
     width: 300px;
@@ -170,6 +171,8 @@ span a:hover {
     font-size: 25px;
   }
   .right {
+    text-align: center;
+    align-items: center;
     padding: 25px;
   }
   .right i {
