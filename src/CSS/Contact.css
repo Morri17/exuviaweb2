@@ -4,6 +4,7 @@
 .form-area {
   padding-top: 5%;
   padding-bottom: 5%;
+  
 }
 .row.single-form {
   border-radius: 10px 10px 10px 10px;
@@ -23,6 +24,7 @@
 .left h1 {
   margin: 10px;
   text-align: center;
+  align-items: center;
   font-family: poppins;
   color: #001157;
   -webkit-text-stroke-width: 0.5px;
@@ -52,6 +54,8 @@
   position: relative;
 }
 .input-field {
+  text-align: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -77,8 +81,11 @@
 }
 
 .input-box {
+  padding: 20px;
   width: 400px;
   box-sizing: border-box;
+  text-align: center;
+  align-items: center;
 }
 .input-box header {
   padding: 5px;
@@ -112,7 +119,8 @@
   color: rgb(7, 59, 14);
   border: none;
   outline: none;
-  height: 45px;
+  width: 300px;
+  height: 50px;
   background: #e9e3e3;
   border-radius: 5px;
   transition: 0.4s;
@@ -137,11 +145,19 @@ span a:hover {
   color: #000;
 }
 
-@media (min-width: 968px) and (max-width: 991px) {
+@media (min-width: 380px) and (max-width: 997px) {
   .right i {
     top: -52px;
     transform: rotate(90deg);
     left: 50%;
+  }
+ 
+  .input-box {
+    padding: 20px;
+    width: 300px;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
   }
 }
 
