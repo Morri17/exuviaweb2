@@ -145,7 +145,7 @@ span a:hover {
   color: #000;
 }
 
-@media (min-width: 380px) and (max-width: 997px) {
+@media (min-width: 500px) and (max-width: 997px) {
   .right i {
     top: -52px;
     transform: rotate(90deg);
